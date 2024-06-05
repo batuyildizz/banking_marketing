@@ -18,7 +18,7 @@ st.set_page_config(
 
 
 
-st.image("C:/Users/batuy/OneDrive/Desktop/images/banka.webp",width=350)
+st.image("C:/Users/batuy/OneDrive/Desktop/images/BANKA.jpg",width=350)
 
 st.header("**Goal**: Predict if the client will subscribe a term deposit.")
 
@@ -121,8 +121,8 @@ if st.sidebar.button("Submit"):
     st.dataframe(results_df)
 
     if prediction[0] == 1:
-        st.image("C:/Users/batuy/OneDrive/Desktop/images/tik.webp",width=750)
+        st.image("C:/Users/batuy/OneDrive/Desktop/images/tik1.jpg",width=750)
     else:
-        st.image("C:/Users/batuy/OneDrive/Desktop/images/carpi.webp",width=750)
+        st.image("C:/Users/batuy/OneDrive/Desktop/images/carpi2.jpg",width=750)
 else:
     st.markdown("Please click the *Submit Button*!")
