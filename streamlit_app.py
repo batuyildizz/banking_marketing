@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 from joblib import load
 from sklearn.preprocessing import StandardScaler
-
+from PIL import Image
 
 st.set_page_config(
    page_title='BANKING MARKETING',
@@ -18,7 +18,9 @@ st.set_page_config(
 
 
 
-st.image("C:/Users/batuy/OneDrive/Desktop/images/banka.webp",width=350)
+image_path = "C:/Users/batuy/OneDrive/Desktop/images/banka.webp"
+image = Image.open(image_path)
+st.image(image, caption='Banking Marketing Project', width=350)
 
 st.header("**Goal**: Predict if the client will subscribe a term deposit.")
 
