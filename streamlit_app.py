@@ -123,7 +123,7 @@ if st.sidebar.button("Submit"):
     st.dataframe(results_df)
 
     if prediction[0] == 1:
-        st.image("C:/Users/batuy/OneDrive/Desktop/tik.webp",width=750)
+        st.image("C:/Users/batuy/OneDrive/Desktop/images/tik.webp",width=750)
     else:
         st.image("C:/Users/batuy/OneDrive/Desktop/images/carpi.webp",width=750)
 else:
